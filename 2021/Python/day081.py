@@ -1,4 +1,16 @@
-[
+input = [
+["be", "cfbegad", "cbdgef", "fgaecd", "cgeb", "fdcge", "agebfd", "fecdb", "fabcd", "edb"], ["fdgacbe", "cefdb", "cefbgd", "gcbe"],
+["edbfga", "begcd", "cbg", "gc", "gcadebf", "fbgde", "acbgfd", "abcde", "gfcbed", "gfec"], ["fcgedb", "cgb", "dgebacf", "gc"],
+["fgaebd", "cg", "bdaec", "gdafb", "agbcfd", "gdcbef", "bgcad", "gfac", "gcb", "cdgabef"], ["cg", "cg", "fdcagb", "cbg"],
+["fbegcd", "cbd", "adcefb", "dageb", "afcb", "bc", "aefdc", "ecdab", "fgdeca", "fcdbega"], ["efabcd", "cedba", "gadfec", "cb"],
+["aecbfdg", "fbg", "gf", "bafeg", "dbefa", "fcge", "gcbea", "fcaegb", "dgceab", "fcbdga"], ["gecf", "egdcabf", "bgf", "bfgea"],
+["fgeab", "ca", "afcebg", "bdacfeg", "cfaedg", "gcfdb", "baec", "bfadeg", "bafgc", "acf"], ["gebdcfa", "ecba", "ca", "fadegcb"],
+["dbcfg", "fgd", "bdegcaf", "fgec", "aegbdf", "ecdfab", "fbedc", "dacgb", "gdcebf", "gf"], ["cefg", "dcbef", "fcge", "gbcadfe"],
+["bdfegc", "cbegaf", "gecbf", "dfcage", "bdacg", "ed", "bedf", "ced", "adcbefg", "gebcd"], ["ed", "bcgafe", "cdgba", "cbgef"],
+["egadfb", "cdbfeg", "cegd", "fecab", "cgb", "gbdefca", "cg", "fgcdab", "egfdb", "bfceg"], ["gbdfcae", "bgc", "cg", "cgb"],
+["gcafb", "gcf", "dcaebfg", "ecagb", "gf", "abcdeg", "gaef", "cafbge", "fdbac", "fegbdc"], ["fgae", "cfgab", "fg", "bagce"]]
+
+input = [
 ["dac", "abcf", "ac", "fdbcga", "dgcbae", "gcbfde", "fgcbd", "agfed", "adcgf", "cdbgfea"], ["cbfa", "bcafdg", "cbfa", "bafcgd"],
 ["abfgd", "baedc", "feb", "fgde", "fbagcd", "facbdge", "agcbfe", "bgafde", "fe", "ebdfa"], ["bef", "fe", "dgfe", "feb"],
 ["dfc", "dc", "afegbc", "bcafe", "fcead", "agefd", "cafdeb", "fcbeadg", "cbed", "cabdfg"], ["cd", "geadf", "cfd", "bfaec"],
@@ -199,3 +211,11 @@
 ["ed", "afbge", "fbcaeg", "bcdfa", "gfeabd", "gfed", "egbfcad", "geadcb", "adbfe", "ead"], ["begadc", "abefg", "dea", "dea"],
 ["fceba", "deafbc", "aegc", "edbgafc", "bfdcg", "ag", "dbafge", "cfbeag", "abg", "cafgb"], ["gab", "agb", "abfegd", "ecga"],
 ["fcedg", "cfdaegb", "dbfg", "egcfbd", "bgc", "cgbefa", "cebgd", "ecbad", "bg", "dceafg"], ["cgb", "fcbgae", "ecbda", "gebcd"]]
+
+count = 0
+for i in range(1,400,2):
+    for x in input[i]:
+        if len(x) == 2 or len(x) == 4 or len(x) == 3 or len(x) == 7:
+            count += 1
+    # print(len(x))
+    print(count)
